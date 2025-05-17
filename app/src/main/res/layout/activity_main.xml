@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#055B30"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSelectTask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:text="Pick Task"
+            android:textColor="#FAF7F7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/taskRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/RadioInstallDoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FDF8F8"
+                android:text="Install Door"
+                android:textColor="#090909" />
+
+            <RadioButton
+                android:id="@+id/RadioBuildShelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF7F7"
+                android:text="Build Shelf"
+                android:textColor="#050505" />
+
+            <RadioButton
+                android:id="@+id/RadioAssembleFurniture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F6F0F0"
+                android:text="Assemble Furniture"
+                android:textColor="#040404" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSelectMaterials"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="Select Materials"
+            android:textColor="#F6F3F3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/CheckWood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F6F4F4"
+            android:text="Wood (R500)" />
+
+        <CheckBox
+            android:id="@+id/CheckNails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F8EFEF"
+            android:text="Nails (R20)" />
+
+        <CheckBox
+            android:id="@+id/CheckHinges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FDF8F8"
+            android:text="Hinges (R30)" />
+
+        <TextView
+            android:id="@+id/tvEnterHours"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Enter Hours"
+            android:textColor="#F8F5F5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etHours"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FAF6F6"
+            android:hint="e.g 5"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#3F51B5"
+            android:backgroundTint="#3F51B5"
+            android:text="Calculate Total" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#F6F1F1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
